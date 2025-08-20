@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-blue-900 shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-4 sm:px-6 py-3">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-white">Portfolio</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home"
+            class="nav-link text-gray-300 hover:text-primary transition duration-300 hover:underline">Home</a>
+          <a href="#skills"
+            class="nav-link text-gray-300 hover:text-primary transition duration-300 hover:underline">Skills</a>
+          <a href="#projects"
+            class="nav-link text-gray-300 hover:text-primary transition duration-300 hover:underline">Projects</a>
+          <a href="#contact"
+            class="nav-link text-gray-300 hover:text-primary transition duration-300 hover:underline">Contact</a>
+        </div>
+        <button class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section static pt-32 pb-20 px-6" style="height: 100vh;">
+    <div class="container mx-auto">
+      <div class="hero-content flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">Sadananda <span
+              class="text-blue-900">Das</span></h1>
+          <h3 class="text-xl md:text-2xl text-white mb-6 animate__animated animate__fadeIn animate__delay-1s">Full
+            Stack Developer</h3>
+          <p class="text-gray-300 mb-8 animate__animated animate__fadeIn animate__delay-2s max-w-lg">
+            Aspiring Software Engineer | Proficient in Java, React, and Node.js
+          </p>
+          <div class="flex space-x-4 animate__animated animate__fadeIn animate__delay-3s">
+            <a href="#contact"
+              class="bg-blue-900 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">Contact
+              Me</a>
+            <a href="#projects"
+              class="border text-white px-6 py-3 rounded-lg hover:bg-blue-800 hover:border-blue-800 transition duration-300">View
+              Work</a>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center animate__animated animate__fadeIn">
+          <div class="relative floating">
+            <div class="rounded-full bg-gradient-to-r from-blue-500 to-blue-700 p-1 w-64 h-64"
+              style="height: 25rem; width: 25rem;">
+              <img src="./assets/Sadananda.png"
+                alt="Professional headshot of Alex Johnson, wearing a blue shirt and smiling"
+                class="rounded-full object-cover w-full h-full" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-6 bg-black"
+    style="height: 100vh; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+    <div class="container mx-auto">
+      <h2 class="text-3xl text-white font-bold text-center mb-12 animate__animated animate__fadeIn">My <span
+          class="text-primary">Skills</span></h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 animate__animated animate__fadeIn">
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition"
+          style="height: 10rem;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="HTML5 logo" />
+          <span class="font-medium">HTML5</span>
+        </div>
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="CSS3 logo" />
+          <span class="font-medium">CSS3</span>
+        </div>
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="JavaScript logo" />
+          <span class="font-medium">JavaScript</span>
+        </div>
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="React logo" />
+          <span class="font-medium">React</span>
+        </div>
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="Node.js logo" />
+          <span class="font-medium">Node.js</span>
+        </div>
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="MongoDB logo" />
+          <span class="font-medium">MongoDB</span>
+        </div>
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition"
+          style="height: 10rem;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="Git logo" />
+          <span class="font-medium">Git</span>
+        </div>
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="Python logo" />
+          <span class="font-medium">Python</span>
+        </div>
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="Django logo" />
+          <span class="font-medium">Django</span>
+        </div>
+        <div class="skill-badge bg-gray-100 p-4 rounded-lg text-center shadow hover:shadow-md transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+            class="w-12 h-12 mx-auto mb-2" alt="Express.js logo" />
+          <span class="font-medium">Express</span>
+        </div>
+      </div>
+      <div class="text-center pt-10 text-2xl">
+        <a href="#" class="text-gray-500 hover:underline">View All Skills</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6 bg-gray-50">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12">Featured <span class="text-primary">Projects</span></h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300">
+          <img src="./assets/image.png" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">E-commerce Dashboard</h3>
+            <p class="text-gray-600 mb-4">
+              Replicates the core functionalities of Airbnb, such as listing and booking accommodations. It typically
+              focuses on creating a platform for users to manage properties, search for rentals, and handle
+              reservations.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">React</span>
+              <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Node.js</span>
+              <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">MongoDB</span>
+            </div>
+            <div class="flex space-x-4">
+              <a href="#" class="text-primary hover:underline">View on GitHub</a>
+              <a href="#" class="text-primary hover:underline">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card bg-white rounded-xl overflow-hidden shadow-md transition-all duration-300">
+          <img src="./assets//tickTacTo.png" class="w-full h-48 object-cover" />
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Social Network Platform</h3>
+            <p class="text-gray-600 mb-4">
+              It is played by two people who take turns marking on X or an O on a 3x3 grid. The first person to mark
+              three of their signs in a horizontal, vertical, or diagonal row is the winner.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">javascript</span>
+              <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">HTML</span>
+              <span class="bg-gray-100 text-gray-800 text-xs px-3 py-1 rounded-full">CSS</span>
+            </div>
+            <div class="flex space-x-4">
+              <a href="#" class="text-primary hover:underline">View on GitHub</a>
+              <a href="#" class="text-primary hover:underline">Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-white">
+    <div class="container mx-auto max-w-4xl">
+      <h2 class="text-3xl font-bold text-center mb-12">Get In <span class="text-primary">Touch</span></h2>
+      <form action="https://formsubmit.co/sadananda174@gmail.com" method="POST" class="space-y-6">
+        <input type="hidden" name="_subject" value="New submission!">
+        <input type="hidden" name="_next" value="https://yourdomain.co/thankyou.html">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+            <input type="text" id="name" name="name"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              placeholder="Abcd Shaha" required>
+          </div>
+          <div>
+            <label for="email" class="block text-gray-700 mb-2">Your Email</label>
+            <input type="email" id="email" name="email"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+              placeholder="abcd@efgh.com" required>
+          </div>
+        </div>
+        <div>
+          <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+          <input type="text" id="subject" name="subject"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            placeholder="Project Inquiry" required>
+        </div>
+        <div>
+          <label for="message" class="block text-gray-700 mb-2">Message</label>
+          <textarea id="message" rows="5" name="message"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            placeholder="Your message here..." required></textarea>
+        </div>
+        <div class="mt-8">
+          <button type="submit"
+            class="bg-blue-800 text-white px-8 py-3 rounded-lg hover:bg-secondary transition duration-300 w-full md:w-auto">Send
+            Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-2xl font-bold mb-2">Sadananda Das</h3>
+          <p class="text-gray-400">Full Stack Developer</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="https://github.com/sadananda-das/" class="text-gray-400 hover:text-white transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.49.5.09.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.337-3.369-1.337-.454-1.152-1.11-1.459-1.11-1.459-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sadanandadas/" class="text-gray-400 hover:text-white transition">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z">
+              </path>
+            </svg>
+          </a>
+
+
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>© 2023 Sadananda Das.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
