@@ -9,5 +9,6 @@ const {
 } = require("../controller/storeController");
 storeRouter.get("/", getHome);
 storeRouter.get("/blogs", getBlogs);
+storeRouter.get("/blogs/:id", getContent);
 
 module.exports = storeRouter;

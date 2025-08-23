@@ -1,0 +1,32 @@
+<%- include('../partials/head') %>
+  </head>
+
+  <body class="bg-black text-white">
+    <%- include('../partials/nav') %>
+
+      <% if (blogs) { %>
+        <div class="h-80 overflow-hidden flex justify-center items-center mt-10">
+          <img src="<%= blogs.image %>" alt="Blog Image" class="w-3/4 h-full object-cover rounded-md shadow-md" />
+        </div>
+
+        <h1 class="text-center text-3xl font-bold text-orange-500 mt-6">
+          <%= blogs.title %>
+        </h1>
+
+        <p class="text-justify text-2xl text-white mt-4 px-4 md:px-20">
+          <%= blogs.longDescription %>
+        </p>
+
+        <% } else { %>
+          <h1 class="text-center text-3xl font-semibold text-blue-600 mt-10">
+            Blog Not Found
+          </h1>
+          <% } %>
+            <footer class="bg-gray-100 py-4 mt-10">
+              <div class="container mx-auto text-center">
+                <p class="text-gray-600">© 2023 Blog Listing Page. All rights reserved.</p>
+              </div>
+            </footer>
+  </body>
+
+  </html>

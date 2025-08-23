@@ -13,15 +13,25 @@ exports.getBlogs = (req, res, next) => {
   });
 };
 
-// exports.getContent = async (req, res) => {
-//   const blogId = req.params.id;
-//   const usedata = require("./data.json");
-//   // console.log("usedata", usedata);
-//   console.log(blogId);
+exports.getContent = async (req, res) => {
+  const blogId = req.params.id;
+  const userData = require("./data.json");
+  // console.log("usedata", usedata);
+  console.log(typeof parseInt(blogId));
+  console.log("data", typeof userData[0].id);
+  const findData = userData.find((blog) => blog.id === parseInt(blogId));
+  if (findData) {
+    console.log("findData", findData.id);
+  }
+  if (!findData) {
+    return res.status(404).render("../views/store/404", {
+      pageTitle: "Blog Not Found",
+      currentPage: "content",
+    });
+  }
 
-//   res.render("../views/store/content", {
-//     blogs: usedata,
-//     currentPage: "content",
-//     blogId: blogId,
-//   });
-// };
+  res.render("../views/store/content", {
+    blogs: findData,
+    currentPage: "content",
+  });
+};
